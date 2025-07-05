@@ -1,0 +1,6 @@
+discord.py
+yara-python
+pefile
+python-dotenv
+python-magic-bin
+pyzipper

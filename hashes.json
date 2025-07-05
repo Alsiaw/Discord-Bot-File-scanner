@@ -1,0 +1,14 @@
+{
+  "files_to_check": [
+    {
+      "name": "Bot Script",
+      "path": "c:\\Users\\Administrator\\Desktop\\Yara Scan (+)\\bot.py",
+      "expected_sha256": "LÜTFEN_BU_DEĞERİ_GERÇEK_HASH_İLE_GÜNCELLEYİN"
+    },
+    {
+      "name": "Örnek Dosya",
+      "path": "C:\\path\\to\\your\\other\\file.exe",
+      "expected_sha256": "LÜTFEN_BU_DEĞERİ_GERÇEK_HASH_İLE_GÜNCELLEYİN"
+    }
+  ]
+}
