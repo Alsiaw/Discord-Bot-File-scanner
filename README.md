@@ -194,7 +194,7 @@ If you encounter any issues:
 
 ## 👥 Developed By
 
-**Developed by akachu 💙 alsiaw**
+**Developed by  💙 alsiaw**
 
 ---
 
