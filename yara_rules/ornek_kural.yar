@@ -7,7 +7,7 @@ rule Detect_Wexize_Revamp_PDB
         description = "Detects the specific PDB path for Wexize Revamp"
         author = "Cascade"
     strings:
-        $pdb_path = "C:\\Users\\akachu\\Desktop\\!Project 2\\!Project\\x64\\Release\\Wexize Revamp.pdb" wide ascii
+        $pdb_path = "C:\\Users\\alsia\\Desktop\\!Project 2\\!Project\\x64\\Release\\Wexize Revamp.pdb" wide ascii
     condition:
        $pdb_path
 }
@@ -15,7 +15,7 @@ rule Detect_Wexize_Revamp_PDB
 rule Packed_With_UPX
 {
     meta:
-        Author = "alsia & akachu"
+        Author = "alsia "
     strings:
         $section1 = "UPX0"
         $section2 = "UPX1"
@@ -28,7 +28,7 @@ rule Packed_With_UPX
 rule Packed_High_Entropy
 {
     meta:
-        Author = "alsia & akachu"
+        Author = "alsia "
     condition:
         // Check for PE file magic bytes
         uint32(0) == 0x5A4D and
@@ -94,7 +94,7 @@ strings:
 
 rule generic_cheat_v1 {
     meta:
-        Author = "/alsia & akachu"
+        Author = "/alsia "
     strings:
         $stringExe = "!This program cannot be run in DOS mode."
         $string1 = "dagger"
@@ -379,7 +379,7 @@ rule Generic_D {
 }
 rule Nullx32_v1 {
     meta:
-        author = "/alsia & akachu"
+        author = "/alsia "
     strings:
         $stringExe = "!This program cannot be run in DOS mode."
         $string1 = "\\config\\config.json"
@@ -508,24 +508,7 @@ rule lithiummenucheat {
     condition: 
         any of them
 }
-rule boklu_forte {
-    strings:
-        $forte_akachu1 = "Forte Is Ready!"
-        $forte_akachu2 = "FortePriv"
-        $forte_akachu3 = "http://93.88.201.11/services/dllhost.php"
-        $forte_akachu4 = "You Have Been Banned"
-        $forte_akachu5 = "http://93.88.201.11/"
-        $forte_akachu6 = "HWID Missmatch!"
-        $forte_akachu7 = "WriteProcessMemory"
-        $forte_akachu8 = "VirtualFreeEx"
-        $forte_akachu9 = "VirtualAllocEx"
-        
-        $forte_hex1 = { F2 41 0F 11 04 3F 8B 05 54 6F 00 00 41 89 44 3F }
-        $forte_hex2 = { F2 41 0F 11 04 3F 8B 05 54 6F 00 00 41 89 44 3F }
-        $forte_hex3 = { 24 20 48 8B 44 24 20 49 89 43 98 4C 89 44 24 20 }
 
-    condition:
-       any of ($forte_akachu*) and any of ($forte_hex*)
 }
 
 rule aorist_external {
